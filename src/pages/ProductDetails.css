@@ -1,0 +1,155 @@
+
+.details-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  min-height: 65vh;
+}
+
+.details-back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.details-image {
+  position: relative;
+}
+
+.details-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f4f0ea;
+}
+
+.details-image span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #171717;
+  color: white;
+  padding: 9px 14px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.details-category {
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.details-info h1 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.details-rating {
+  color: #b47b25;
+  margin-bottom: 25px;
+}
+
+.details-rating span {
+  color: #777;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.details-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.details-price strong {
+  font-size: 27px;
+}
+
+.details-price del {
+  color: #999;
+}
+
+.details-price span {
+  color: #43845a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.details-quantity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.details-quantity div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+.details-quantity button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.details-add-button {
+  width: 100%;
+  padding: 16px;
+  background: #171717;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.details-add-button:hover {
+  background: #444;
+}
+
+.delivery-note {
+  color: #777;
+  font-size: 13px;
+  line-height: 2;
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .details-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .details-image img {
+    height: 350px;
+  }
+
+  .details-info h1 {
+    font-size: 29px;
+  }
+}
